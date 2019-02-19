@@ -317,65 +317,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </header>
         <div class="form-area">
             <form role="form" action="https://forms.zohopublic.com/hortatech/form/Atendecard/formperma/CXNvKfxxdmyjDxjK6nACXrvpGpYvqzJxyznWrY7aFdY/htmlRecords/submit" name="form" method="POST" onsubmit="javascript:document.charset=&quot;UTF-8&quot;; return zf_ValidateAndSubmit();" accept-charset="UTF-8" enctype="multipart/form-data" id="form"><input type="hidden" name="zf_referrer_name" value="">
-
-                <div class="form-group">
-                    <input type="text" maxlength="255" name="Name_First" invlovedinsalesiq="false" placeholder="Nome" fieldtype="7">
-                    <input type="text" maxlength="255" name="Name_Last" invlovedinsalesiq="false" placeholder="Sobrenome" fieldtype="7">
-
-                   <!--  <input type="text" class="form-control" id="name" name="name" placeholder="Nome" required=""> -->
+                <div class="form-group d-flex">
+                    <input class="w-50 form-control mr-1" type="text" maxlength="255" name="Name_First" invlovedinsalesiq="false" placeholder="Nome" fieldtype="7">
+                    <input class="w-50 form-control ml-1" type="text" maxlength="255" name="Name_Last" invlovedinsalesiq="false" placeholder="Sobrenome" fieldtype="7">
                 </div>
                 <div class="form-group">
-                    <input placeholder="Email" fieldtype="9" invlovedinsalesiq="false" type="text" maxlength="255" name="Email" checktype="c5" value="">
-
-                    <!-- <input type="text" class="form-control" id="email" name="email" placeholder="E-mail" required=""> -->
+                    <input class="form-control" placeholder="Email" fieldtype="9" invlovedinsalesiq="false" type="text" maxlength="255" name="Email" checktype="c5" value="">
                 </div>
                 <div class="form-group">
-                    <input placeholder="Telefone" invlovedinsalesiq="false" type="text" name="PhoneNumber_countrycode" compname="PhoneNumber" checktype="c7" phoneformat="1" maxlength="20" value="" id="international_PhoneNumber_countrycode" fieldtype="11">
-
-                 <!--    <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Telefone" required=""> -->
+                    <input class="form-control" placeholder="Telefone" invlovedinsalesiq="false" type="text" name="PhoneNumber_countrycode" compname="PhoneNumber" checktype="c7" phoneformat="1" maxlength="20" value="" id="international_PhoneNumber_countrycode" fieldtype="11">
                 </div>
                 <div class="form-group">
-                    <input placeholder="Endereço" type="text" name="SingleLine3" checktype="c1" value="" maxlength="255" invlovedinsalesiq="false">
-
-                   <!--  <input type="text" class="form-control" id="address" name="address" placeholder="Endereço" required=""> -->
+                    <input class="form-control" placeholder="Endereço" type="text" name="SingleLine3" checktype="c1" value="" maxlength="255" invlovedinsalesiq="false">
                 </div>
                 <div id="form-check">
 
+                  <div class="form-check">
+                    <input class="zf-radioBtnType" type="radio" id="Radio_1" name="Radio" checktype="c1" value="Atendecard Individual" checked>
+                    <label for="Radio_1" class="zf-radioChoice">Atendecard Individual</label>
+                  </div>
 
-                  <input class="zf-radioBtnType" type="radio" id="Radio_1" name="Radio" checktype="c1" value="Atendecard Individual">
-            <label for="Radio_1" class="zf-radioChoice">Atendecard Individual</label> </span>
-            <span class="zf-multiAttType">
-            <input class="zf-radioBtnType" type="radio" id="Radio_2" name="Radio" checktype="c1" value="Atendecard Família">
-            <label for="Radio_2" class="zf-radioChoice">Atendecard Família</label> </span>
+                  <div class="form-check">
+                    <input class="zf-radioBtnType" type="radio" id="Radio_2" name="Radio" checktype="c1" value="Atendecard Família">
+                    <label for="Radio_2" class="zf-radioChoice">Atendecard Família</label>
+                  </div>
+                </div>
 
-<!--
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="Tipo de Plano" id="AtendecardIndividual" value="Atendecard Individual" checked>
-                        <label class="form-check-label" for="exampleRadios1">
-                          Atendecard Individual
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="Tipo de Plano" id="AtendecardFamilia" value="Atendecard Família">
-                        <label class="form-check-label" for="exampleRadios2">
-                            Atendecard Família
-                        </label>
-                    </div> -->
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Assunto" name="SingleLine4" checktype="c1" value="" maxlength="255" invlovedinsalesiq="false">
                 </div>
                 <div class="form-group">
-                  <input type="text" placeholder="Assunto" name="SingleLine4" checktype="c1" value="" maxlength="255" invlovedinsalesiq="false">
-
-                <!--     <input type="text" class="form-control" id="subject" name="subject" placeholder="Assunto" required=""> -->
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="Mensagem" name="MultiLine" checktype="c1" maxlength="65535"></textarea>
-
-                <!--     <textarea class="form-control" type="textarea" id="message" placeholder="Mensagem" maxlength="140" rows="7"></textarea> -->
+                    <textarea class="form-control" placeholder="Mensagem" name="MultiLine" checktype="c1" maxlength="65535"></textarea>
                 </div>
                 <div class="btn-contato">
                     <button class="zf-submitColor">Enviar</button>
-
-              <!--       <input type="submit" id="submit" name="submit" class="btn btn-danger pull-right" value="Enviar"> -->
                 </div>
             </form>
         </div>
