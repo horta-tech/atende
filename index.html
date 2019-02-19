@@ -22,11 +22,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Atendecard um plano de saúde feito para você!"> 
+    <meta name="description" content="Atendecard um plano de saúde feito para você!">
     <link rel="icon" href="favicon-32.png" type="image/x-icon"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="style/styles.css">
-   <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet"> 
+   <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <title>Atendecard</title>
 </head>
@@ -316,21 +316,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <h2>FALE COM A GENTE</h2>
         </header>
         <div class="form-area">
-            <form role="form" action="https://formspree.io/falecomagente@atendecard.com" method="POST">
+            <form role="form" action="https://forms.zohopublic.com/hortatech/form/Atendecard/formperma/CXNvKfxxdmyjDxjK6nACXrvpGpYvqzJxyznWrY7aFdY/htmlRecords/submit" name="form" method="POST" onsubmit="javascript:document.charset=&quot;UTF-8&quot;; return zf_ValidateAndSubmit();" accept-charset="UTF-8" enctype="multipart/form-data" id="form"><input type="hidden" name="zf_referrer_name" value="">
 
                 <div class="form-group">
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Nome" required="">
+                    <input type="text" maxlength="255" name="Name_First" invlovedinsalesiq="false" placeholder="Nome" fieldtype="7">
+                    <input type="text" maxlength="255" name="Name_Last" invlovedinsalesiq="false" placeholder="Sobrenome" fieldtype="7">
+
+                   <!--  <input type="text" class="form-control" id="name" name="name" placeholder="Nome" required=""> -->
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="email" name="email" placeholder="E-mail" required="">
+                    <input placeholder="Email" fieldtype="9" invlovedinsalesiq="false" type="text" maxlength="255" name="Email" checktype="c5" value="">
+
+                    <!-- <input type="text" class="form-control" id="email" name="email" placeholder="E-mail" required=""> -->
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Telefone" required="">
+                    <input placeholder="Telefone" invlovedinsalesiq="false" type="text" name="PhoneNumber_countrycode" compname="PhoneNumber" checktype="c7" phoneformat="1" maxlength="20" value="" id="international_PhoneNumber_countrycode" fieldtype="11">
+
+                 <!--    <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Telefone" required=""> -->
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="address" name="address" placeholder="Endereço" required="">
+                    <input placeholder="Endereço" type="text" name="SingleLine3" checktype="c1" value="" maxlength="255" invlovedinsalesiq="false">
+
+                   <!--  <input type="text" class="form-control" id="address" name="address" placeholder="Endereço" required=""> -->
                 </div>
                 <div id="form-check">
+
+
+                  <input class="zf-radioBtnType" type="radio" id="Radio_1" name="Radio" checktype="c1" value="Atendecard Individual">
+            <label for="Radio_1" class="zf-radioChoice">Atendecard Individual</label> </span>
+            <span class="zf-multiAttType">
+            <input class="zf-radioBtnType" type="radio" id="Radio_2" name="Radio" checktype="c1" value="Atendecard Família">
+            <label for="Radio_2" class="zf-radioChoice">Atendecard Família</label> </span>
+
+<!--
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="Tipo de Plano" id="AtendecardIndividual" value="Atendecard Individual" checked>
                         <label class="form-check-label" for="exampleRadios1">
@@ -342,16 +360,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <label class="form-check-label" for="exampleRadios2">
                             Atendecard Família
                         </label>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Assunto" required="">
+                  <input type="text" placeholder="Assunto" name="SingleLine4" checktype="c1" value="" maxlength="255" invlovedinsalesiq="false">
+
+                <!--     <input type="text" class="form-control" id="subject" name="subject" placeholder="Assunto" required=""> -->
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" type="textarea" id="message" placeholder="Mensagem" maxlength="140" rows="7"></textarea>
+                    <textarea placeholder="Mensagem" name="MultiLine" checktype="c1" maxlength="65535"></textarea>
+
+                <!--     <textarea class="form-control" type="textarea" id="message" placeholder="Mensagem" maxlength="140" rows="7"></textarea> -->
                 </div>
                 <div class="btn-contato">
-                    <input type="submit" id="submit" name="submit" class="btn btn-danger pull-right" value="Enviar">
+                    <button class="zf-submitColor">Enviar</button>
+
+              <!--       <input type="submit" id="submit" name="submit" class="btn btn-danger pull-right" value="Enviar"> -->
                 </div>
             </form>
         </div>
